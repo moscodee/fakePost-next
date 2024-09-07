@@ -1,0 +1,29 @@
+.post_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post {
+  background-color: #dddddd;
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 10px;
+  width: 50%;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.post:hover {
+  background-color: #d1d1d1;
+  width: 51%;
+}
+
+.userId {
+  margin: 10px;
+  background-color: #dddddd;
+  width: 25%;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  user-select: none;
+}
