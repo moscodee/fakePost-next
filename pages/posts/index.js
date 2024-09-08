@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Style from "../../styles/Posts.module.css";
+import Link from "next/link";
 
 export default function index() {
   const [posts, setPosts] = useState([]);
@@ -22,9 +23,11 @@ export default function index() {
           return (
             <>
               <div className={Style.userId}>Write By UserId: {post.userId}</div>
-              <div className={Style.post}>
-                <h1>{post.title}</h1>
-              </div>
+              <h1 className={Style.post}>
+                <Link href={`/posts/${post.id}`} className={Style.nav_link}>
+                  {post.title}
+                </Link>
+              </h1>
             </>
           );
         })}
