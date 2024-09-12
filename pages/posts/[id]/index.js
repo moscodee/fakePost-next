@@ -27,7 +27,7 @@ const PostId = () => {
         <div className={Style.title}>Title: {post.title}</div>
         <div className={Style.body}>{post.body}</div>
         <button className={Style.commend}>
-          <Link href={`/posts/${post.id}/commend`} className={Style.btn_link}>
+          <Link href={`/posts/${post.id}/comment`} className={Style.btn_link}>
             Commend
           </Link>
         </button>
