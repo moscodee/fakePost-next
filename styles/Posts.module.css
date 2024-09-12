@@ -3,12 +3,21 @@
   flex-wrap: wrap;
 }
 
+.userId {
+  margin: 10px;
+  background-color: #dddddd;
+  width: 25%;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  user-select: none;
+}
+
 .post {
   text-decoration: none;
   background-color: #dddddd;
   margin: 10px;
   padding: 10px 15px;
-  font-size: 15px;
   width: 50%;
   cursor: pointer;
   transition: 0.25s ease-in-out;
@@ -19,12 +28,7 @@
   width: 51%;
 }
 
-.userId {
-  margin: 10px;
-  background-color: #dddddd;
-  width: 25%;
-  align-items: center;
-  display: flex;
-  padding: 0 10px;
-  user-select: none;
+.title {
+  font-size: 15px;
+  color: #000;
 }

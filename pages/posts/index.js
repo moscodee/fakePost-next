@@ -23,11 +23,9 @@ export default function index() {
           return (
             <>
               <div className={Style.userId}>Write By UserId: {post.userId}</div>
-              <h1 className={Style.post}>
-                <Link href={`/posts/${post.id}`} className={Style.nav_link}>
-                  {post.title}
-                </Link>
-              </h1>
+              <Link href={`/posts/${post.id}`} className={Style.post}>
+                <h1 className={Style.title}>{post.title}</h1>
+              </Link>
             </>
           );
         })}

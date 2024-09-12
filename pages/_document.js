@@ -12,7 +12,7 @@ export default function Document() {
             <Link href="/" className="nav_link">
               Home
             </Link>
-            <Link href="posts" className="nav_link">
+            <Link href="/posts" className="nav_link">
               Posts
             </Link>
           </div>
